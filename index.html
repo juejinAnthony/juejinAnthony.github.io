@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="utf-8">
 	<title>不以个人退步为耻，反以全人类进步为荣</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="keywords" content="some keywords that best describe your business">
 	<meta name="description" content="a short description of your company">
 	<meta name="author" content="SRPACDY">
@@ -19,86 +20,135 @@
 	<link rel="stylesheet" href="css/layout.css" type="text/css" media="screen">
 	<link rel="stylesheet" href="css/background.css" type="text/css" media="screen">
 	<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" media="screen">
-	
+	<style>
+		.clock-box {}
+
+		.clock {
+			width: 2px;
+			height: 100px;
+			background: #FFF;
+			margin: 30px auto;
+			position: relative;
+		}
+
+		.clock::after {
+			content: "";
+			position: absolute;
+			bottom: -20px;
+			left: -9px;
+			width: 20px;
+			height: 20px;
+			border-radius: 10px;
+			background: #68EF;
+		}
+
+		.clock {
+			-webkit-animation: go 1s ease-in-out alternate infinite;
+			-moz-animation: go 1s ease-in-out alternate infinite;
+			animation: go 1s ease-in-out alternate infinite;
+		}
+
+		@keyframes go {
+			0% {
+				-webkit-transform: rotate(30deg);
+				-webkit-transform-origin: top center;
+				-moz-transform: rotate(30deg);
+				-moz-transform-origin: top center;
+				transform: rotate(30deg);
+				transform-origin: top center;
+			}
+
+			100% {
+				-webkit-transform: rotate(-30deg);
+				-webkit-transform-origin: top center;
+				-moz-transform: rotate(-30deg);
+				-moz-transform-origin: top center;
+				transform: rotate(-30deg);
+				transform-origin: top center;
+			}
+		}
+	</style>
 	<!-- Favicons
 	================================================== -->
 	<link rel="shortcut icon" href="images/favicon.ico">
 
 </head>
+
 <body>
 
 	<!-- Primary Page Layout
 	================================================== -->
 
-<div class="header bg">
-	<div class="container">
-		<div class="row">
-			<header class="col-xs-12 text-center">
-				<div class="logo">
-					<h1 style="font-weight: 700">生命以负熵为食</h1>
-					<p style="font-size: 20px;">距离本人离开这个客观的物理世界还剩下约：</p>
-					<ul class="time">
-						<li>
-							<span class="days" id="days"></span><br />
-							天
-						</li>
-						<li>
-							<span class="hours"></span><br />
-							时
-						</li>
-						<li>
-							<span class="minutes"></span><br />
-							分
-						</li>
-						<li>
-							<span class="seconds"></span><br />
-							秒
-						</li>
-					</ul>
-					<p style="font-size: 20px;">时光飞逝，不是吗？</p>
-				</div>
-			</header>
-		</div>
-		<div class="row">
-			<div class="col-xs-12 text-center">
-				<div class="down">
-					<a href="#about" class="smooth"><i class="fa fa-angle-down fa-3x"></i></a>
+	<div class="header bg">
+		<div class="container">
+			<div class="row">
+				<header class="col-xs-12 text-center">
+					<div class="logo">
+						<h1 style="font-weight: 700">人生实如钟摆，在痛苦与倦怠中徘徊。</h1>
+						<div class="clock-box">
+							<div class="clock"></div>
+						</div>
+						<ul class="time">
+							<li>
+								<span class="days" id="days"></span><br />
+								天
+							</li>
+							<li>
+								<span class="hours"></span><br />
+								时
+							</li>
+							<li>
+								<span class="minutes"></span><br />
+								分
+							</li>
+							<li>
+								<span class="seconds"></span><br />
+								秒
+							</li>
+						</ul>
+					</div>
+				</header>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 text-center">
+					<div class="down">
+						<a href="#about" class="smooth"><i class="fa fa-angle-down fa-3x"></i></a>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
-<div class="about" id="about">
-	<div class="container">
-		<div class="row">
-			<div class="col-xs-10 text-center">
-				<div class="about-content">
-					<h2>关于我</h2>
-					
-					<p>
-						本人最喜欢的作家有两位：加西亚·马尔克斯和曹雪芹，在某种程度上，我认为马尔克斯笔下的《百年孤独》和曹雪芹笔下的《红楼梦》都是魔幻现实。马孔多、宁荣街、炼金术师、跛足道人、幻化为蝶、石头传说、百年命运、家族兴衰，不一而足。（此处恨不能将二者穿越时空的联结叙说清楚）
-					</p>
-					<p>
-						我读到了什么呢？
-						
-						概括为一句：生活即是魔幻与现实的结合。 如果你是浪漫主义人格，就看其魔幻的部分。如果你是现实主义人格，就看其现实部分。
-					</p>
-					<p>
-						年幼之时，总是会有一些不切实际的想法。有的遗忘在梦里，有的散落在时间的流逝中去，只有极一小部分能陪伴着你我长大、成熟。
-						
-						思来想去，有一件事我比较确信：活着为了讲述，这句话亦源自马尔克斯的自传 —— 《活着为了讲述》。
-						
-						你若是宇航员，畅游宇宙就是在“讲述”。你若是程序员，键写代码就是在“讲述”。拉长时间的维度，行业并无高低之分。不同身份的人用不同的方式讲述着不同的故事，将生活演绎为故事。
-					</p>
-					<p>
-						此点我认为魔幻的部分偏多。
-					</p>
-				</div>				
+	<div class="about" id="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-10 text-center">
+					<div class="about-content">
+						<h2>关于我</h2>
+
+						<p>
+							本人最喜欢的作家有两位：加西亚·马尔克斯和曹雪芹，在某种程度上，我认为马尔克斯笔下的《百年孤独》和曹雪芹笔下的《红楼梦》都是魔幻现实。马孔多、宁荣街、炼金术师、跛足道人、幻化为蝶、石头传说、百年命运、家族兴衰，不一而足。（此处恨不能将二者穿越时空的联结叙说清楚）
+						</p>
+						<p>
+							我读到了什么呢？
+
+							概括为一句：生活即是魔幻与现实的结合。 如果你是浪漫主义人格，就看其魔幻的部分。如果你是现实主义人格，就看其现实部分。
+						</p>
+						<p>
+							年幼之时，总是会有一些不切实际的想法。有的遗忘在梦里，有的散落在时间的流逝中去，只有极一小部分能陪伴着你我长大、成熟。
+
+							思来想去，有一件事我比较确信：活着为了讲述，这句话亦源自马尔克斯的自传 —— 《活着为了讲述》。
+
+							你若是宇航员，畅游宇宙就是在“讲述”。你若是程序员，键写代码就是在“讲述”。拉长时间的维度，行业并无高低之分。不同身份的人用不同的方式讲述着不同的故事，将生活演绎为故事。
+						</p>
+						<p>
+							此点我认为魔幻的部分偏多。
+						</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
-<!-- <div class="features">
+	<!-- <div class="features">
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12 text-center">
@@ -128,50 +178,52 @@
 		</div>
 	</div>
 </div> -->
-<div class="social">
-	<div class="container">
-		<div class="row">
-			<div class="col-xs-12 text-center">
-				<div class="social-content">
-					<h2>目前活跃在这些平台</h2>
-					<div class="socmed">
-						<a href="https://juejin.cn/user/1521379823340792" target="_blank"><i class="fa fa-pencil fa-2x"></i>掘金</a>
-						<a href="https://tuaran.github.io/" target="_blank"><i class="fa fa-home fa-2x"></i>旧版博客</a>
-						<a href="https://www.zhihu.com/people/tu-tu-tu-tu-tu-25-1" target="_blank"><i class="fa fa-comment fa-2x"></i>知乎</a>
-						<a href="微信搜：掘金安东尼" target="_blank"><i class="fa fa-flickr fa-2x"></i>公众号</a>
-						<!-- <a href="https://creativemarket.com/SRPACDY" target="_blank"><i class="fa fa-vimeo-square fa-2x"></i></a>
+	<div class="social">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 text-center">
+					<div class="social-content">
+						<h2>目前活跃在这些平台</h2>
+						<div class="socmed">
+							<a href="https://juejin.cn/user/1521379823340792" target="_blank"><i
+									class="fa fa-pencil fa-2x"></i>掘金</a>
+							<a href="https://tuaran.github.io/" target="_blank"><i class="fa fa-home fa-2x"></i>旧版博客</a>
+							<a href="https://www.zhihu.com/people/tu-tu-tu-tu-tu-25-1" target="_blank"><i
+									class="fa fa-comment fa-2x"></i>知乎</a>
+							<a href="微信搜：掘金安东尼" target="_blank"><i class="fa fa-flickr fa-2x"></i>公众号</a>
+							<!-- <a href="https://creativemarket.com/SRPACDY" target="_blank"><i class="fa fa-vimeo-square fa-2x"></i></a>
 						<a href="https://creativemarket.com/SRPACDY" target="_blank"><i class="fa fa-tumblr fa-2x"></i></a>
 						<a href="https://creativemarket.com/SRPACDY" target="_blank"><i class="fa fa-pinterest fa-2x"></i></a>	
 						<a href="https://creativemarket.com/SRPACDY" target="_blank"><i class="fa fa-flickr fa-2x"></i></a> -->
-					</div>					
-				</div>				
-			</div>
-		</div>
-	</div>
-</div>
-<div class="subscribe" id="subscribe">
-	<div class="container">
-		<div class="row">
-			<div class="col-xs-12 text-center">
-				<div class="subscribe-form">
-					<h3>最近在写书：《程序员成长手册——漫画版》，敬请期待</h3>
-					<!-- <form action="contact.php" method="post">
-						<input type="text" id="inform_email" placeholder="Enter your email and stay tuned!" onFocus="if(!this._haschanged){this.value=''};this._haschanged=true;" />
-						<input type="submit" value="Subscribe" id="in_submit" />
-					</form> -->
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
-<div class="contact bg">
-	<div class="container">	
-		<div class="row">
-			<div class="col-md-12 text-center">
-				<h1>交个朋友吧，加我微信：anthony1453</h1>
-			</div>			
-			<div class="col-md-12">
-				<!-- <form action="contact.php" method="post" id="contact_form" class="contact_form">
+	<div class="subscribe" id="subscribe">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 text-center">
+					<div class="subscribe-form">
+						<h3>最近在写书：《程序员成长手册——漫画版》，敬请期待</h3>
+						<!-- <form action="contact.php" method="post">
+						<input type="text" id="inform_email" placeholder="Enter your email and stay tuned!" onFocus="if(!this._haschanged){this.value=''};this._haschanged=true;" />
+						<input type="submit" value="Subscribe" id="in_submit" />
+					</form> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="contact bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<h1>交个朋友吧，加我微信：anthony1453</h1>
+				</div>
+				<div class="col-md-12">
+					<!-- <form action="contact.php" method="post" id="contact_form" class="contact_form">
 					<fieldset>
 						<div class="col-sm-6"><input type="text" id="name" placeholder="Name" onFocus="if(!this._haschanged){this.value=''};this._haschanged=true;" /></div>
 						<div class="col-sm-6"><input type="text" id="email" placeholder="Email" onFocus="if(!this._haschanged){this.value=''};this._haschanged=true;" /></div>
@@ -181,25 +233,26 @@
 						</div>
 					</fieldset>
 				</form> -->
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
-<div class="footer">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12 text-center">				
-				<div class="copy">Copyright&copy;2022 <a href="https://creativemarket.com/SRPACDY" target="_blank">TUARAN</a></div>
-			</div>			
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<div class="copy">Copyright&copy;2022 <a href="https://creativemarket.com/SRPACDY"
+							target="_blank">TUARAN</a></div>
+				</div>
+			</div>
 		</div>
 	</div>
-</div>
 
 
 
 	<!-- JS
 	================================================== -->
-	
+
 	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="js/scroll.js" charset="utf-8"></script>
 	<script type="text/javascript" src="js/jquery.countdown.js" charset="utf-8"></script>
@@ -212,4 +265,5 @@
 	================================================== -->
 
 </body>
+
 </html>
